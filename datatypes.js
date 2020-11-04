@@ -9,8 +9,6 @@ object for more complex data structures.
 symbol for unique identifiers.*/
 
 //Task
-const appDiv = document.getElementById("dt");
-appDiv.innerHTML = `<h1>gffg</h1>`;
 let name = "Ilya"; //Ilya
 
 //alert(`hello ${1}`); // hello 1

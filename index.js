@@ -1,6 +1,7 @@
 // Import stylesheets
 import "./style.css";
 import "./datatypes.js";
+import "./challenges.js";
 
 // Write Javascript code!
 const appDiv = document.getElementById("app");
