@@ -2,6 +2,7 @@
 import "./style.css";
 import "./datatypes.js";
 import "./challenges.js";
+import "./objects.js";
 
 // Write Javascript code!
 const appDiv = document.getElementById("app");
