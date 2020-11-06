@@ -46,3 +46,24 @@ function multiplyNumeric(obj) {
     }
   }
 }
+
+//objects references and copying
+let username = { name: "John" };
+let admin = username; // copy the reference
+admin.name = "Pete";
+console.log(username, admin);
+
+//cloning
+let clone = {};
+for (let prop in user) {
+  clone[prop] = user[prop];
+}
+clone.name = "Pete";
+console.log(user, clone);
+
+//object.assign()
+let permissions1 = { canView: true };
+Object.assign(user, permissions1);
+console.log(user);
+let clone1 = Object.assign({}, permissions1);
+console.log(clone1);
