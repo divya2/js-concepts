@@ -67,3 +67,61 @@ Object.assign(user, permissions1);
 console.log(user);
 let clone1 = Object.assign({}, permissions1);
 console.log(clone1);
+
+//Objects & function
+function makeUser() {
+  return {
+    name: "John",
+    ref() {
+      return this;
+    }
+  };
+}
+let user1 = makeUser();
+//alert( user1.ref().name );
+
+/*Create an object calculator with three methods:
+read() prompts for two values and saves them as object properties.
+sum() returns the sum of saved values.
+mul() multiplies saved values and returns the result.*/
+
+let calculator = {
+  sum() {
+    return this.val1 + this.val2;
+  },
+  mul() {
+    return this.val1 * this.val2;
+  },
+  read() {
+    this.val1 = +prompt("enter val 1", 0);
+    this.val2 = +prompt("enter val 2", 0);
+  }
+};
+
+//calculator.read();
+//alert(calculator.sum());
+//alert(calculator.mul());
+
+/*There’s a ladder object that allows to go up and down:*/
+let ladder = {
+  step: 0,
+  up() {
+    this.step++;
+    return this;
+  },
+  down() {
+    this.step--;
+    return this;
+  },
+  showStep: function() {
+    // shows the current step
+    alert(this.step);
+    return this;
+  }
+};
+ladder
+  .up()
+  .up()
+  .up()
+  .down()
+  .showStep();
