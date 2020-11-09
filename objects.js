@@ -115,7 +115,7 @@ let ladder = {
   },
   showStep: function() {
     // shows the current step
-    alert(this.step);
+    //alert(this.step);
     return this;
   }
 };
@@ -125,3 +125,25 @@ ladder
   .up()
   .down()
   .showStep();
+
+let obj = {};
+function A() {
+  return obj;
+}
+function B() {
+  return obj;
+}
+
+//alert(new A() == new B());
+
+function Accumulator(value) {
+  this.value = value;
+  this.read = function() {
+    this.value += +prompt("enter val", 0);
+  };
+}
+let accumulator = new Accumulator(0); // initial value 1
+accumulator.read(); // adds the user-entered value
+accumulator.read(); // adds the user-entered value
+
+alert(accumulator.value);
