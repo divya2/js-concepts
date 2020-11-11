@@ -143,7 +143,6 @@ function Accumulator(value) {
   };
 }
 let accumulator = new Accumulator(0); // initial value 1
+/*accumulator.read(); // adds the user-entered value
 accumulator.read(); // adds the user-entered value
-accumulator.read(); // adds the user-entered value
-
-alert(accumulator.value);
+alert(accumulator.value); */

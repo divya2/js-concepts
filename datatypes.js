@@ -16,3 +16,14 @@ let name = "Ilya"; //Ilya
 //alert(`hello ${"name"}`); // hello name
 
 //alert(`hello ${name}`); //hello Ilya
+
+let str = "Hello";
+str.test = 5;
+//alert(str.test);
+
+//Uppercase the first characters
+function capitalize(str) {
+  if (!str) return str;
+  return str[0].toUpperCase() + str.slice(1);
+}
+console.log(capitalize("divya"));
