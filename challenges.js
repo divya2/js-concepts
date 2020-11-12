@@ -23,3 +23,10 @@ do {
   num = prompt("Enter a number greater than 100?", 0); 
 } while (num <= 100 && num);
 */
+
+function checkSpam(str) {
+  let lowerStr = str.toLowerCase();
+  return lowerStr.includes("viagra") || lowerStr.includes("XXX");
+}
+
+console.log(checkSpam("vIagra"));
