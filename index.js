@@ -3,7 +3,7 @@ import "./style.css";
 import "./datatypes.js";
 import "./challenges.js";
 import "./objects.js";
-
+import "./arrays.js";
 // Write Javascript code!
 const appDiv = document.getElementById("app");
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
